@@ -1,0 +1,17 @@
+div:hover{
+   font-weight: bold;
+}
+#meh{
+   font-size: 3em;
+   background-color: teal;
+}
+
+#huh{
+   font-size: 2em;
+   background-color: orange;
+}
+
+#odd{
+   font-size: 1.5em;
+   background-color: green;
+}
