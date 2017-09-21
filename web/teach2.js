@@ -1,8 +1,8 @@
-function clickMe(){
+function click(){
    alert("Clicked!");
 }
 
-function changeColor(){
+function colorChange(){
    var textbox_id = "txtColor";
    var textbox = document.getElementById(textbox_id);
    
