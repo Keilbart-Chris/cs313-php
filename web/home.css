@@ -13,13 +13,16 @@ intro {
 
 craft {
    float: left;
-   size: 32%;
+   width: 100px;
+   height: 100px;
 }
 moon {
    float: left;
-   size: 32%;
+   width: 100px;
+   height: 100px;
 }
 t1000 {
    float: left;
-   size: 32%;
+   width: 100px;
+   height: 100px;
 }
