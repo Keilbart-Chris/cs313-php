@@ -1,0 +1,25 @@
+h1 {
+   text-align: center;
+   color: gold;
+}
+
+body {
+   background-color: black;
+}
+
+intro {
+   color: white;
+}
+
+craft {
+   float: left;
+   size: 32%;
+}
+moon {
+   float: left;
+   size: 32%;
+}
+t1000 {
+   float: left;
+   size: 32%;
+}
