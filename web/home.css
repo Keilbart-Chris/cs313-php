@@ -7,21 +7,21 @@ body {
    background-color: black;
 }
 
-intro {
+#intro {
    color: white;
 }
 
-craft {
+#craft {
    float: left;
    width: 100px;
    height: 100px;
 }
-moon {
+#moon {
    float: left;
    width: 100px;
    height: 100px;
 }
-t1000 {
+#t1000 {
    float: left;
    width: 100px;
    height: 100px;
