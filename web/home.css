@@ -17,17 +17,17 @@ body {
 
 #craft {
    float: left;
-   width: 32%;
-   height: 32%;
+   width: 50%;
+   height: auto;
 }
 #moon {
    float: left;
-   width: 32%;
-   height: 32%;
+   width: 50%;
+   height: auto;
 }
 #t1000 {
    width: 32%;
-   height: 32%;
+   height: auto;
 }
 
 .image {
