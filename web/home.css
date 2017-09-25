@@ -28,7 +28,6 @@ body {
    height: auto;
 }
 #t1000 {
-   float: left;
    padding: 15px;
    width: 32%;
    height: auto;
@@ -94,14 +93,18 @@ body {
 
 #pistol {
    position: absolute;
-   width: 30%;
+   width: 55%;
    height: auto;
 }
 #bowtie {
    position: absolute;
+   width: 50%;
+   height: auto;
 }
 #skull {
    position: absolute;
+   width: 30%;
+   height: auto;
 }
 
 .container_1:hover .overlay_1 {
