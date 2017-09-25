@@ -17,15 +17,19 @@ body {
 
 #craft {
    float: left;
+   padding: 15px;
    width: 50%;
    height: auto;
 }
 #moon {
    float: left;
+   padding: 15px;
    width: 50%;
    height: auto;
 }
 #t1000 {
+   float: left;
+   padding: 15px;
    width: 32%;
    height: auto;
 }
