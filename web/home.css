@@ -33,11 +33,11 @@ body {
    height: auto;
 }
 
-.image {
-   display: block;
+/*.image {
+   display: inline block;
    width: 100%;
    height: auto;
-}
+}*/
 
 .container_1 {
    position: relative;
