@@ -70,3 +70,26 @@ body {
 .overlay_3 {
    
 }
+
+#pistol {
+   position: absolute;
+}
+#bowtie {
+   position: absolute;
+}
+#skull {
+   position: absolute;
+}
+
+.container_1:hover .overlay_1 {
+  opacity: 1;
+}
+
+.container_2:hover .overlay_2 {
+   bottom: 0;
+   height: 100%;
+}
+
+.container_3:hover .overlay_3 {
+   height: 100%;
+}
