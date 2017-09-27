@@ -1,5 +1,6 @@
 function click(){
-   alert("Clicked!");
+   //alert("Clicked!");
+   console.log("Clicked!");
 }
 
 function colorChange(){
