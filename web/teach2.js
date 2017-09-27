@@ -1,4 +1,4 @@
-function click() {
+function clickIt() {
    alert("Clicked!");
 }
 
