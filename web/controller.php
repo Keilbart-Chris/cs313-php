@@ -3,7 +3,7 @@
 $name = htmlspecialchars($_POST["name"]);
 $email = htmlspecialchars($_POST["email"]);
 $major = htmlspecialchars($_POST["major"]);
-$continent = $_POST["continent"];
+$continents = $_POST["continent"];
 $comments = htmlspecialchars($_POST["comments"]);
 
 ?>
@@ -25,10 +25,11 @@ $comments = htmlspecialchars($_POST["comments"]);
 <ul>
 
 <?php
-foreach ($continent as $visited) 
+
+foreach ($continents as $continent) 
 {
-   $visited_clean = htmlspecialchars($place);
-   echo "<li><p>$visited_clean</p></li>"; 
+   $continent_clean = htmlspecialchars($continent);
+   echo "<li><p>$continent_clean</p></li>"; 
 }
 ?>
 
