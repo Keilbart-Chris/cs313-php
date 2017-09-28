@@ -17,9 +17,9 @@ $comments = htmlspecialchars($_POST["comments"]);
 <body>
 
 
-	<p>Name: <?=$name ?></p>
-	<p>Email: <a href="mailto:<?=$email ?>"><?=$email?></a></p>
-	<p>Major: <?=$major ?></p>
+	<p>Name: <?php echo $_POST["name"]; ?></p>
+	<p>Email: <?php echo $_POST["email"]; ?></p>
+	<p>Major: <?php echo $_POST["major"]; ?></p>
    <p>Places visited: </p>
 
 <ul>
@@ -34,7 +34,7 @@ foreach ($continent as $visited)
 
 </ul>
 
-   <p>Comments: <?=$comments?></p>
+   <p>Comments: <?php echo $_POST["comments"];?></p>
 
 
 </body>
