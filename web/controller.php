@@ -1,3 +1,13 @@
+<?php
+
+$name = htmlspecialchars($_POST["name"]);
+$email = htmlspecialchars($_POST["email"]);
+$major = htmlspecialchars($_POST["major"]);
+$continent = $_POST["continent"];
+$comments = htmlspecialchars($_POST["comments"]);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,16 +15,11 @@
 	<title>Document</title>
 </head>
 <body>
-$name = htmlspecialchars($_POST["name"]);
-$email = htmlspecialchars($_POST["email"]);
-$major = htmlspecialchars($_POST["major"]);
-$continent = $_POST["continent"];
-$comments = htmlspecialchars($_POST["comments"]);
 
 
-	<p>Name: <?php echo $_POST["name"]; ?></p>
-	<p>Email: <?php echo $_POST["email"]; ?></p>
-	<p>Major: <?php echo $_POST["major"]; ?></p>
+	<p>Name: <?=$name ?></p>
+	<p>Email: <a href="mailto:<?=$email ?>"><?=$email?></a></p>
+	<p>Major: <?=$major ?></p>
    <p>Places visited: </p>
 
 <ul>
@@ -29,7 +34,7 @@ foreach ($continent as $visited)
 
 </ul>
 
-   <p>Comments: <?php =$name ?></p>
+   <p>Comments: <?=$comments?></p>
 
 
 </body>
