@@ -19,7 +19,7 @@ $comments = htmlspecialchars($_POST["comments"]);
 
 <ul>
 
-<? 
+<?php
 foreach ($continent as $visited) 
 {
    $visited_clean = htmlspecialchars($place);
