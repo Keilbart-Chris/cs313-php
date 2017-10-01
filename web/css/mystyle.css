@@ -41,9 +41,12 @@ h1, h2, h3, h4, h5, h6{
 
 .itemName{
    text-align: center;
+   width: 100%;
 }
 table{
    background-color:beige;
+   width:75%;
+   margin-left: 12.5%;
 }
 
 #props{

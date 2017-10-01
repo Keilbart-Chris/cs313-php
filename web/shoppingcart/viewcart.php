@@ -1,6 +1,12 @@
 <?php
 session_start();
 
+if($_POST) {
+   if() {
+      
+   }
+      
+}
 
 ?>
 <!DOCTYPE html>
@@ -20,22 +26,17 @@ session_start();
    </nav>
    
    
-   <?php
-      if(isset($_SESSION['cart'])){
-         foreach($_SESSION['cart']as $id => $quantity) {
-            echo '<p>'.$id.'</p>';
-            echo '<p>'.$quantity.'</p>';
-         }
-      }
-      else {
-         echo '<p> Cart is empty </p>';
-      }
-   
-   ?>
+   <?php if(isset($_SESSION['cart'])): ?>
+      <?php foreach($_SESSION['cart']as $id => $quantity): ?>
+         <p><?=$id?> (<?=$quantity?>)</p>;
+      <?php endforeach;?>
+   <?php else: ?>
+      <p>Cart is empty</p>
+   <? endif; ?>
    
    
    
-   
+   <input type="button" 
    
    <footer role="contentinfo" class="navfooter">
       <div>

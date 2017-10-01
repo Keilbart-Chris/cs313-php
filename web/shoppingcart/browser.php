@@ -47,103 +47,103 @@ if($_POST) {
          <th> </th>
       </tr>
       <tr>
-         <td class="itemName">
-            <p>Plasma Grenade</p>
+         <td>
+            <p class="itemName">Plasma Grenade</p>
          </td>
          <td class="shrink">
             <img src="/images/plasma.jpg"  class="images">
          </td>
          <td>
-            <p>$49.99</p>
+            <p class="price">$49.99</p>
          </td>
          <td>
             <form method="post" action="browser.php" id="item1">
-            <input type="hidden" name="id" value="plasma">
+            <input type="hidden" name="id" value="Plasma Grenade">
             <a href="#" class="bton" onclick="document.getElementById('item1').submit()">Add to Cart</a>
             </form>
          </td>
       </tr>
       <tr>
-         <td class="itemName">
-            <p>Helmet</p>
+         <td>
+            <p class="itemName">Spartan Helmet</p>
          </td>
          <td class="shrink">
             <img src="/images/spartanhelmet.jpg" class="images">
          </td>
          <td>
-            <p>$249.99</p>
+            <p class="price">$249.99</p>
          </td>
          <td >
             <form method="post" action="browser.php" id="item2">
-            <input type="hidden" name="id" value="helm">
+            <input type="hidden" name="id" value="Spartan Helmet">
             <a href="#" class="bton" onclick="document.getElementById('item2').submit()">Add to Cart</a>
             </form>
          </td>
       </tr>
       <tr>
-         <td class="itemName">
-            <p>Pistol</p>
+         <td>
+            <p class="itemName">Pistol</p>
          </td>
          <td class="shrink">
             <img src="/images/halopistol.jpg" class="images">
          </td>
          <td>
-            <p>$99.99</p>
+            <p class="price">$99.99</p>
          </td>
          <td>
             <form method="post" action="browser.php" id="item3">
-            <input type="hidden" name="id" value="pistol">
+            <input type="hidden" name="id" value="Pistol">
             <a href="#" class="bton" onclick="document.getElementById('item3').submit()">Add to Cart</a>
             </form>
          </td>
       </tr>
       <tr>
-         <td class="itemName">
-            <p>Caster</p>
+         <td>
+            <p class="itemName">Caster</p>
          </td>
          <td class="shrink">
             <img src="/images/caster.jpg" class="images">
          </td>
          <td>
-            <p>$199.99</p> 
+            <p class="price">$199.99</p> 
          </td>
          <td>
             <form method="post" action="browser.php" id="item4">
-            <input type="hidden" name="id" value="caster">
+            <input type="hidden" name="id" value="Caster">
             <a href="#" class="bton" onclick="document.getElementById('item4').submit()">Add to Cart</a>
             </form>
          </td>
       </tr>
       <tr>
-         <td class="itemName">
-            <p>Buster Sword</p>
+         <td>
+            <p class="itemName">Buster Sword</p>
          </td>
          <td class="shrink">
             <img src="/images/buster.jpg" class="images">
          </td>
          <td>
-            <p>$299.99</p>
+            <p class="price">$299.99</p>
          </td>
          <td>
             <form method="post" action="browser.php" id="item5">
-            <input type="hidden" name="id" value="buster">
+            <input type="hidden" name="id" value="Buster Sword">
             <a href="#" class="bton" onclick="document.getElementById('item5').submit()">Add to Cart</a>
             </form>
          </td>
       </tr>
       <tr>
-         <td class="itemName">
-            <p>Assault Rifle</p>
+         <td>
+            <p class="itemName">Assault Rifle</p>
          </td>
          <td class="shrink">
             <img src="/images/assaultrifle.jpg" class="images">
          </td>
          <td>
-            <p>$249.99</p>
+            <p class="price">$249.99</p>
          </td>
          <td>
             <form method="post" action="browser.php" id="item6">
-            <input type="hidden" name="id" value="AR">
+            <input type="hidden" name="id" value="Assault Rifle">
             <a href="#" class="bton" onclick="document.getElementById('item6').submit()">Add to Cart</a>
             </form>
          </td>
