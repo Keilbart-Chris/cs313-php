@@ -16,37 +16,109 @@
    <h2 id="props">Available Props:</h2>
    <table id="tab1">
       <tr>
-         <th> </th>
+         <th> Name  </th>
          <th> Image </th>
          <th> Price </th>
+         <th> </th>
       </tr>
       <tr>
+         <td>
+            <p>Plasma Grenade</p>
+         </td>
+         <td>
+            <img src="/images/plasma.jpg"  id="plasma">
+         </td>
+         <td>
+            <p>$49.99</p>
+         </td>
          <td>
             <form method="post" action="viewcart.php" id="item1">
             <a href="#" class="bton" onclick="document.getElementById('item1').submit()">Add to Cart</a>
             </form>
          </td>
+      </tr>
+      <tr>
          <td>
-            <input type="checkbox" name="item[]" value="Pl" id="thing-pl"><label for = "thing-pl" >Plasma Grenade</label>
+            <p>Helmet</p>
          </td>
          <td>
-            <p>$49.99</p>
+            <img src="/images/spartanhelmet.jpg" id="helmet">
+         </td>
+         <td>
+            <form method="post" action="viewcart.php" id="item2">
+            <a href="#" class="bton" onclick="document.getElementById('item2').submit()">Add to Cart</a>
+            </form>
+         </td>
+         <td>
+            <p>$249.99</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>Pistol</p>
+         </td>
+         <td>
+            <img src="/images/halopistol.jpg" id="pistol">
+         </td>
+         <td>
+            <form method="post" action="viewcart.php" id="item3">
+            <a href="#" class="bton" onclick="document.getElementById('item3').submit()">Add to Cart</a>
+            </form>
+         </td>
+         <td>
+            <p>$99.99</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>Caster</p>
+         </td>
+         <td>
+            <img src="/images/caster.jpg" id="caster">
+         </td>
+         <td>
+            <form method="post" action="viewcart.php" id="item4">
+            <a href="#" class="bton" onclick="document.getElementById('item4').submit()">Add to Cart</a>
+            </form> 
+         </td>
+         <td>
+            <p>$199.99</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>Buster Sword</p>
+         </td>
+         <td>
+            <img src="/images/buster.jpg" id="buster">
+         </td>
+         <td>
+            <form method="post" action="viewcart.php" id="item5">
+            <a href="#" class="bton" onclick="document.getElementById('item5').submit()">Add to Cart</a>
+            </form>
+         </td>
+         <td>
+            <p>$299.99</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>Assault Rifle</p>
+         </td>
+         <td>
+            <img src="/images/assaultrifle.jpg" id="ar">
+         </td>
+         <td>
+            <form method="post" action="viewcart.php" id="item6">
+            <a href="#" class="bton" onclick="document.getElementById('item6').submit()">Add to Cart</a>
+            </form>
+         </td>
+         <td>
+            <p>$249.99</p>
          </td>
       </tr>
    </table>
-      <img src="/images/plasma.jpg"  id="plasma"><br>
-		<input type="checkbox" name="item[]" value="H" id="thing-h"><label for = "thing-h" >Helmet</label><br>
-		<img src="/images/spartanhelmet.jpg" id="helmet"><br>
-      <input type="checkbox" name="item[]" value="Pi" id="thing-pi"><label for = "thing-pi" >Pistol</label><br>
-		<img src="/images/halopistol.jpg" id="pistol"><br>
-      <input type="checkbox" name="item[]" value="C" id="thing-c"><label for = "thing-c" >Caster Gun</label><br>
-		<img src="/images/caster.jpg" id="caster"><br>
-      <input type="checkbox" name="item[]" value="Bu" id="thing-bu"><label for = "thing-bu" >Buster Sword</label><br>
-      <img src="/images/buster.jpg" id="buster"><br>
-      <input type="checkbox" name="item[]" value="Ar" id="thing-ar"><label for = "thing-ar" >Assault Rifle</label><br>
-		<img src="/images/assaultrifle.jpg" id="ar"><br>
-
-   
+         
    <footer role="contentinfo" class="navfooter">
       <div>
          <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/footer.php'; ?>
