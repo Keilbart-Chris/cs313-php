@@ -23,15 +23,24 @@ session_start();
    <?php if(isset($_SESSION['cart'])): ?>
       <?php foreach($_SESSION['cart']as $id => $quantity): ?>
          <p><?=$id?> (<?=$quantity?>)</p>;
+         <form method="post" action="viewcart.php" id="item1">
+            <a href="#" class="bton" onclick="document.getElementById('item1').submit()">Remove from Cart</a>
+         </form>
       <?php endforeach;?>
    <?php else: ?>
       <p>Cart is empty</p>
    <? endif; ?>
    
+   <table>
+      <tr>
+         <button>
+            <a href="/shoppingcart/browser.php">Continue Shopping</a>
+         </button>
+      </tr>
+      <tr>
+         <button>
+            <a href="#"
    
-   <button>
-      <a href="/shoppingcart/browser.php">Continue Shopping</a>
-   </button>
    
    <footer role="contentinfo" class="navfooter">
       <div>
