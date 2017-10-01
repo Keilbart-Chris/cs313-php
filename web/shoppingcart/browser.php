@@ -6,8 +6,14 @@ if($_POST) {
       if(!isset($_SESSION['cart'])) {
          $_SESSION['cart'] = [];
       }
-      
-      $_SESSION['cart'][]=$_POST['id'];
+      $itemId=$_POST['id'];
+      if(isset($_SESSION['cart'][$itemId])) {
+         $_SESSION['cart'][$itemId]++;
+      }
+      else {
+         $_SESSION['cart'][$itemId]=1;
+      }
+      $message = 'Item successfully added to cart';
    }
 }
 
@@ -27,6 +33,11 @@ if($_POST) {
    <nav role="navigation" class="navfooter">
           <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/nav1.php'; ?>
    </nav>
+   
+   <?php if(isset($message)): ?>
+   <p><?=$message ?></p>
+   <?php endif; ?>
+   
    <h2 id="props">Available Props:</h2>
    <table>
       <tr>

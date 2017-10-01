@@ -22,8 +22,9 @@ session_start();
    
    <?php
       if(isset($_SESSION['cart'])){
-         foreach($_SESSION['cart']as $id) {
+         foreach($_SESSION['cart']as $id => $quantity) {
             echo '<p>'.$id.'</p>';
+            echo '<p>'.$quantity.'</p>';
          }
       }
       else {
