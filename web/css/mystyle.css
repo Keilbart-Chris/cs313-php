@@ -1,0 +1,170 @@
+div, li, a{
+    box-sizing: border-box;
+}
+#header{
+    text-align: center;
+    width: 100%;
+}
+h1{
+    font-family: helvetica;
+    font-size: 4em;
+    font-weight: normal;
+}
+h2{
+    font-family: helvetica;
+    font-size: 2.5em;
+    font-weight: normal;
+}
+h3{
+    font-family: helvetica;
+    font-size: 2em;
+    font-weight: normal;
+}
+h4,h5,h6{
+    font-family: Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: normal
+}
+h1, h2, h3, h4, h5, h6{
+    color: #804515;
+}
+
+#body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-size: 1em;
+    padding:0;
+    margin:0;
+}
+
+p.sans-serif{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navfooter{
+    font-size: 1em;
+    background: seagreen;
+    padding: 20px;
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+    clear: both;
+}
+.navfooter ul{
+    
+}
+.navfooter li {
+    position: relative;
+    display: inline-block;
+    background: #00CAC3;
+}
+.navfooter a{
+    display: block;
+    padding: 10px;    
+}
+.navfooter a:hover{
+    background: #2E4372;
+    color: white;
+}
+.active{
+    background: #5f2ef5;
+    color: white;
+}
+
+#3dnav{
+    
+}
+#display:after{
+    display: block;
+    content: ' ';
+    clear: both;
+}
+#sidebar1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-size: 1em;
+    padding-left: 5%;
+    margin:0;
+    width: 27%;  
+    float: left;
+    height: 100%;
+}
+#main{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-size: 1em;
+    padding-left: 5%;
+    margin:0;
+    float: left;
+    width: 60%;
+    text-align: center;
+    border-left: 2px solid #2E4372;
+}
+#sound{
+    width: 90%;
+}
+img{
+    width: 20%;
+    padding-bottom: 5%;
+}
+#captcha{
+    max-width: 20%;
+}
+#video{
+    max-width: 100%;
+}
+
+@media screen and (max-width: 435px) and (min-width: 320px){
+    #body{
+        width: 100%;
+        text-align: center;
+    }
+    #sidebar1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-size: 1em;
+    padding: 0;
+    margin:0;
+    width: 100%;  
+    float: left;
+    }
+#main{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-size: 1em;
+    padding:0;
+    margin:0;
+    float: right;
+    width: 100%;
+    border-top: 2px solid black;
+    }
+.color{
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 800px) and (min-width: 500px){
+    #body{
+        width: 100%;
+        text-align: center;
+    }
+    #sidebar1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-size: 1em;
+    padding:0;
+    margin:0;
+    width: 100%;  
+    float: left;
+    }
+#main{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-size: 1em;
+    padding:0;
+    margin:0;
+    float: right;
+    width: 100%;
+    }  
+.color{
+        max-width: 100%;
+    }
+}
