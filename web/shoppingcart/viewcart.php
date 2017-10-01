@@ -1,12 +1,6 @@
 <?php
 session_start();
 
-if($_POST) {
-   if() {
-      
-   }
-      
-}
 
 ?>
 <!DOCTYPE html>
@@ -35,8 +29,9 @@ if($_POST) {
    <? endif; ?>
    
    
-   
-   <input type="button" 
+   <button>
+      <a href="/shoppingcart/browser.php">Continue Shopping</a>
+   </button>
    
    <footer role="contentinfo" class="navfooter">
       <div>
