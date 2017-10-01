@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6{
     color: #804515;
 }
 
-#html{
+html{
    background-color:blue;
 }
 
@@ -91,7 +91,7 @@ p.sans-serif{
 #sound{
     width: 90%;
 }
-#images{
+.images{
     width: 20%;
     padding-bottom: 5%;
 }
