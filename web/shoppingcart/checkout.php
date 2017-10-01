@@ -21,17 +21,19 @@ session_start();
       <label>First Name</label><br>
       <input type="text" name="first" placeholder="first name"><br>
       <label>Last Name</label><br>
-      <input type="text" name="first" placeholder="last name"><br>
+      <input type="text" name="last" placeholder="last name"><br>
+      <label>Email</label><br>
+      <input type="text" name="email" placeholder="example@domain.com"><br>
       <label>Street Address</label><br>
-      <input type="text" name="first" placeholder="street address"><br>
+      <input type="text" name="address" placeholder="street address"><br>
       <label>City</label><br>
-      <input type="text" name="first" placeholder="city"><br>
+      <input type="text" name="city" placeholder="city"><br>
       <label>State</label><br>
-      <input type="text" name="first" placeholder="state"><br>
+      <input type="text" name="state" placeholder="state"><br>
       <label>Zip Code</label><br>
-      <input type="text" name="first" placeholder="zip code"><br>
+      <input type="text" name="zip" placeholder="zip code"><br>
       <label>Phone<label><br>
-      <input type="text" name="first" placeholder="phone"><br><br>
+      <input type="text" name="phone" placeholder="phone"><br><br>
       <input type="submit" name="SUBMIT">
    </form>
    
