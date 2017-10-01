@@ -40,7 +40,7 @@ if($_POST) {
    <?php if(isset($_SESSION['cart'])): ?>
       <?php foreach($_SESSION['cart']as $id => $quantity): ?>
          <p><?=$id?> (<?=$quantity?>)</p>;
-         <form method="post" action="viewcart.php" id="item1">
+         <form method="post" action="viewcart.php">
             <a href="#" class="bton" onclick="document.getElementById('item1').submit()">Remove from Cart</a>
          </form>
       <?php endforeach;?>
@@ -48,17 +48,13 @@ if($_POST) {
       <p>Cart is empty</p>
    <? endif; ?>
    
-   <table>
-      <tr>
-         <button>
-            <a href="/shoppingcart/browser.php">Continue Shopping</a>
-         </button>
-      </tr>
-      <tr>
-         <button>
-         </button>
-      </tr>
-   </table>
+   <button>
+      <a href="/shoppingcart/browser.php">Continue Shopping</a>
+   </button>
+   <button>
+      <a href="/shoppingcart/checkout.php">Checkout</a>
+   </button>
+      
    
    
    <footer role="contentinfo" class="navfooter">
