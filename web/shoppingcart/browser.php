@@ -32,6 +32,8 @@
          <td>
             <p>$49.99</p>
          </td>
+      </tr>
+   </table>
       <img src="/images/plasma.jpg"  id="plasma"><br>
 		<input type="checkbox" name="item[]" value="H" id="thing-h"><label for = "thing-h" >Helmet</label><br>
 		<img src="/images/spartanhelmet.jpg" id="helmet"><br>
@@ -43,7 +45,6 @@
       <img src="/images/buster.jpg" id="buster"><br>
       <input type="checkbox" name="item[]" value="Ar" id="thing-ar"><label for = "thing-ar" >Assault Rifle</label><br>
 		<img src="/images/assaultrifle.jpg" id="ar"><br>
-		<input type="submit" name="SUBMIT">
 
    
    <footer role="contentinfo" class="navfooter">
