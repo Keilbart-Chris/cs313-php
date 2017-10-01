@@ -26,7 +26,7 @@
             <p>Plasma Grenade</p>
          </td>
          <td>
-            <img src="/images/plasma.jpg"  id="plasma">
+            <img src="/images/plasma.jpg"  class="images">
          </td>
          <td>
             <p>$49.99</p>
@@ -42,7 +42,7 @@
             <p>Helmet</p>
          </td>
          <td>
-            <img src="/images/spartanhelmet.jpg" id="helmet">
+            <img src="/images/spartanhelmet.jpg" class="images">
          </td>
          <td>
             <form method="post" action="viewcart.php" id="item2">
@@ -58,7 +58,7 @@
             <p>Pistol</p>
          </td>
          <td>
-            <img src="/images/halopistol.jpg" id="pistol">
+            <img src="/images/halopistol.jpg" class="images">
          </td>
          <td>
             <form method="post" action="viewcart.php" id="item3">
@@ -74,7 +74,7 @@
             <p>Caster</p>
          </td>
          <td>
-            <img src="/images/caster.jpg" id="caster">
+            <img src="/images/caster.jpg" class="images">
          </td>
          <td>
             <form method="post" action="viewcart.php" id="item4">
@@ -90,7 +90,7 @@
             <p>Buster Sword</p>
          </td>
          <td>
-            <img src="/images/buster.jpg" id="buster">
+            <img src="/images/buster.jpg" class="images">
          </td>
          <td>
             <form method="post" action="viewcart.php" id="item5">
@@ -106,7 +106,7 @@
             <p>Assault Rifle</p>
          </td>
          <td>
-            <img src="/images/assaultrifle.jpg" id="ar">
+            <img src="/images/assaultrifle.jpg" class="images">
          </td>
          <td>
             <form method="post" action="viewcart.php" id="item6">
