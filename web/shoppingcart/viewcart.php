@@ -1,7 +1,21 @@
 <?php
 session_start();
 
-
+if($_POST)
+   if(isset($_POST['id'])) {
+      if(!isset($_SESSION['cart'])) {
+         $_SESSION['cart'] = [];
+      }
+      $itemId=$_POST['id'];
+      if(isset($_SESSION['cart'][$itemId])) {
+         $_SESSION['cart'][$itemId]--;
+      }
+      else {
+         $_SESSION['cart'][$itemId]=0;
+      }
+      $message = 'Item successfully removed from cart';
+   }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,6 +33,9 @@ session_start();
           <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/nav1.php'; ?>
    </nav>
    
+   <?php if(isset($message)): ?>
+   <p><?=$message ?></p>
+   <?php endif; ?>
    
    <?php if(isset($_SESSION['cart'])): ?>
       <?php foreach($_SESSION['cart']as $id => $quantity): ?>
