@@ -1,9 +1,7 @@
 <?php
 session_start();
-?>
-<!DOCTYPE html>
-<?php
-session_start();
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +20,17 @@ session_start();
    </nav>
    
    
+   <?php
+      if(isset($_SESSION['cart'])){
+         foreach($_SESSION['cart']as $id) {
+            echo '<p>'.$id.'</p>';
+         }
+      }
+      else {
+         echo '<p> Cart is empty </p>';
+      }
    
+   ?>
    
    
    

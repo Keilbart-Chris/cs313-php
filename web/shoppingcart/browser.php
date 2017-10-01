@@ -1,6 +1,18 @@
 <?php
 session_start();
+
+if($_POST) {
+   if(isset($_POST['id'])) {
+      if(!isset($_SESSION['cart'])) {
+         $_SESSION['cart'] = [];
+      }
+      
+      $_SESSION['cart'][]=$_POST['id'];
+   }
+}
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,8 +46,8 @@ session_start();
             <p>$49.99</p>
          </td>
          <td>
-            <form method="post" action="viewcart.php" id="item1">
-            <input type="hidden" name="id" value="1">
+            <form method="post" action="browser.php" id="item1">
+            <input type="hidden" name="id" value="plasma">
             <a href="#" class="bton" onclick="document.getElementById('item1').submit()">Add to Cart</a>
             </form>
          </td>
@@ -51,7 +63,8 @@ session_start();
             <p>$249.99</p>
          </td>
          <td >
-            <form method="post" action="viewcart.php" id="item2">
+            <form method="post" action="browser.php" id="item2">
+            <input type="hidden" name="id" value="helm">
             <a href="#" class="bton" onclick="document.getElementById('item2').submit()">Add to Cart</a>
             </form>
          </td>
@@ -67,7 +80,8 @@ session_start();
             <p>$99.99</p>
          </td>
          <td>
-            <form method="post" action="viewcart.php" id="item3">
+            <form method="post" action="browser.php" id="item3">
+            <input type="hidden" name="id" value="pistol">
             <a href="#" class="bton" onclick="document.getElementById('item3').submit()">Add to Cart</a>
             </form>
          </td>
@@ -83,7 +97,8 @@ session_start();
             <p>$199.99</p> 
          </td>
          <td>
-            <form method="post" action="viewcart.php" id="item4">
+            <form method="post" action="browser.php" id="item4">
+            <input type="hidden" name="id" value="caster">
             <a href="#" class="bton" onclick="document.getElementById('item4').submit()">Add to Cart</a>
             </form>
          </td>
@@ -99,7 +114,8 @@ session_start();
             <p>$299.99</p>
          </td>
          <td>
-            <form method="post" action="viewcart.php" id="item5">
+            <form method="post" action="browser.php" id="item5">
+            <input type="hidden" name="id" value="buster">
             <a href="#" class="bton" onclick="document.getElementById('item5').submit()">Add to Cart</a>
             </form>
          </td>
@@ -115,7 +131,8 @@ session_start();
             <p>$249.99</p>
          </td>
          <td>
-            <form method="post" action="viewcart.php" id="item6">
+            <form method="post" action="browser.php" id="item6">
+            <input type="hidden" name="id" value="AR">
             <a href="#" class="bton" onclick="document.getElementById('item6').submit()">Add to Cart</a>
             </form>
          </td>
