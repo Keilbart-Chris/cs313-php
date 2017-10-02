@@ -42,7 +42,7 @@ if($_POST) {
       <?php foreach($_SESSION['cart']as $id => $quantity): ?>
             <form method="post" action="viewcart.php">
             <p><?=$id?></p>
-            <input type="number" value="<?=$quantity?>" id="quantity" min="0" max="10">
+            <input type="number" value="<?=$quantity?>" name="quantity" min="0" max="10">
             <input type="hidden" value="<?=$id?>" name="id">
             <button type="submit" name="update" value="up/down">Update</button>
             <button type="submit" name="remove" value="emptied">Remove</button>
