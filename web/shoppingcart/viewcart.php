@@ -2,18 +2,19 @@
 session_start();
 
 if($_POST) {
-   if(isset($_POST['id'])) {
+   if(isset($_POST['id'],$_POST['quantity'])) {
+      $itemId=$_POST['id'];
       if(!isset($_SESSION['cart'])) {
          $_SESSION['cart'] = [];
       }
-      $itemId=$_POST['id'];
-      if(isset($_SESSION['cart'][$itemId])) {
-         $_SESSION['cart'][$itemId]--;
+      if(isset($_POST['update'])) {
+         $_SESSION['cart'][$itemId]=intval($_POST['quantity']);
+         $message = 'Cart updated';
       }
-      else {
-         $_SESSION['cart'][$itemId]=0;
-      }
-      $message = 'Item successfully removed from cart';
+      else if(isset($_POST['remove'])) {
+         unset($_SESSION['cart'][$itemId]);
+         $message = 'Item successfully removed from cart';
+      } 
    }
 }
 ?>
@@ -39,9 +40,12 @@ if($_POST) {
    
    <?php if(isset($_SESSION['cart'])): ?>
       <?php foreach($_SESSION['cart']as $id => $quantity): ?>
-         <p><?=$id?> (<?=$quantity?>)</p>;
-         <form method="post" action="viewcart.php">
-            <a href="#" class="bton" onclick="document.getElementById('item1').submit()">Remove from Cart</a>
+            <form method="post" action="viewcart.php">
+            <p><?=$id?></p>
+            <input type="number" value="<?=$quantity?>" id="quantity" min="0" max="10">
+            <input type="hidden" value="<?=$id?>" name="id">
+            <button type="submit" name="update" value="up/down">Update</button>
+            <button type="submit" name="remove" value="emptied">Remove</button>
          </form>
       <?php endforeach;?>
    <?php else: ?>
