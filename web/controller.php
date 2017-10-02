@@ -3,7 +3,6 @@
 $name = htmlspecialchars($_POST["name"]);
 $email = htmlspecialchars($_POST["email"]);
 $major = htmlspecialchars($_POST["major"]);
-$continents = $_POST["continent"];
 $comments = htmlspecialchars($_POST["comments"]);
 
 ?>

@@ -1,5 +1,13 @@
 <?php
 session_start();
+
+$first = htmlspecialchars($_POST["first "]);
+$last = htmlspecialchars($_POST["last"]);
+$address = htmlspecialchars($_POST["address"]);
+$city = htmlspecialchars($_POST["city"]);
+$state = htmlspecialchars($_POST["state"]);
+$zip = htmlspecialchars($_POST["zip"]);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,26 +25,28 @@ session_start();
           <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/nav1.php'; ?>
    </nav>
    
+   <p>You have purchased the following items</p><br>
    
+   <?php if(isset($_SESSION['cart'])): ?>
+      <?php foreach($_SESSION['cart']as $id => $quantity): ?>
+         <p><?=$id?> (<?=$quantity?>)</p>;
+      <?php endforeach;?>
+   <?php else: ?>
+      <p>Nothing was purchased</p>
+   <? endif; ?>
    
+   <p>The items will be sent to:</p>
    
+   <p><?=$first?> <?=$last?></p>
+   <p><?=$address?></p>
+   <p><?=$city?>, <?=$state?> <?=$zip?></p>
    
-   
-   
-   
-   
+  
    <footer role="contentinfo" class="navfooter">
       <div>
          <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/footer.php'; ?>
          <?php echo date('j F, Y', getlastmod()) ?>
       </div>
    </footer>
-   <?php
-      // remove all session variables
-      session_unset(); 
-
-      // destroy the session 
-      session_destroy(); 
-   ?>
 </body>
 </html>
