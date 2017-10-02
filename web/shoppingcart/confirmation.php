@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$first = htmlspecialchars($_POST["first "]);
+$first = htmlspecialchars($_POST["first"]);
 $last = htmlspecialchars($_POST["last"]);
 $address = htmlspecialchars($_POST["address"]);
 $city = htmlspecialchars($_POST["city"]);
