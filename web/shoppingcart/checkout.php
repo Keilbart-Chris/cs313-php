@@ -17,7 +17,7 @@ session_start();
           <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/nav1.php'; ?>
    </nav>
    <h4 id="bill">Billing Information:</h4>
-   <form method="post" action="checkout.php" id="datacollect">
+   <form method="post" action="confirmation.php" id="datacollect">
       <label>First Name</label><br>
       <input type="text" name="first" placeholder="first name"><br>
       <label>Last Name</label><br>
